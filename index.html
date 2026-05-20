@@ -1,1 +1,166 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>YUANERKANG | 作品集</title>
+  <meta name="description" content="YUANERKANG 的个人作品集网站。" />
+  <style>
+    :root{
+      --bg:#0b1020;
+      --card:#111a33;
+      --text:#e8eefc;
+      --muted:#b7c3e6;
+      --line:rgba(255,255,255,.10);
+      --accent:#7aa7ff;
+      --chip:rgba(122,167,255,.14);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "PingFang SC","Noto Sans CJK SC","Microsoft YaHei", sans-serif;
+      background: radial-gradient(1200px 600px at 20% -10%, rgba(122,167,255,.35), transparent 60%),
+                  radial-gradient(900px 500px at 85% 0%, rgba(157,103,255,.25), transparent 55%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.6;
+    }
+    a{color:var(--text); text-decoration:none}
+    a:hover{color:var(--accent)}
+    .wrap{max-width:1000px; margin:0 auto; padding:42px 18px 72px}
+    header{
+      display:flex; gap:18px; align-items:center; justify-content:space-between;
+      border:1px solid var(--line); background:rgba(17,26,51,.55);
+      backdrop-filter: blur(8px);
+      padding:18px; border-radius:16px;
+    }
+    .brand h1{margin:0; font-size:22px}
+    .brand p{margin:6px 0 0; color:var(--muted); font-size:14px}
+    .nav{display:flex; gap:12px; flex-wrap:wrap}
+    .btn{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.06);
+      padding:8px 12px;
+      border-radius:12px;
+      font-size:14px;
+    }
+    .btn.primary{border-color:rgba(122,167,255,.45); background:var(--chip)}
+    main{margin-top:18px; display:grid; grid-template-columns: 1.2fr .8fr; gap:18px}
+    @media (max-width: 860px){ main{grid-template-columns:1fr} header{flex-direction:column; align-items:flex-start} }
 
+    .card{
+      border:1px solid var(--line);
+      background:rgba(17,26,51,.55);
+      backdrop-filter: blur(8px);
+      border-radius:16px;
+      padding:18px;
+    }
+    .card h2{margin:0 0 12px; font-size:16px}
+    .muted{color:var(--muted)}
+    .chips{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .chip{padding:6px 10px; border:1px solid var(--line); background:rgba(255,255,255,.05); border-radius:999px; font-size:12px; color:var(--muted)}
+    .grid{display:grid; grid-template-columns:1fr; gap:12px}
+    .project{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.04);
+      border-radius:14px;
+      padding:14px;
+    }
+    .project h3{margin:0 0 6px; font-size:15px}
+    .project p{margin:0 0 10px; color:var(--muted); font-size:13px}
+    .meta{display:flex; gap:10px; flex-wrap:wrap; align-items:center}
+    .meta a{font-size:13px}
+    footer{margin-top:18px; color:var(--muted); font-size:12px; text-align:center}
+    .k{color:var(--accent)}
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <h1>YUANERKANG <span class="k">/</span> 作品集</h1>
+        <p>纯静态 HTML · GitHub Pages 部署</p>
+      </div>
+      <div class="nav">
+        <a class="btn primary" href="https://github.com/YUANERKANG" target="_blank" rel="noreferrer">GitHub</a>
+        <!-- 下面这些你可以改成自己的链接 -->
+        <a class="btn" href="#projects">项目</a>
+        <a class="btn" href="#about">关于我</a>
+        <a class="btn" href="#contact">联系</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card" id="projects">
+        <h2>项目 Projects</h2>
+        <p class="muted">把下面每个项目的标题、简介、链接替换成你的真实内容即可上线。</p>
+
+        <div class="grid">
+          <article class="project">
+            <h3>项目 A：XXX</h3>
+            <p>一句话说明你解决了什么问题、用了什么技术、结果如何（例如：性能提升 30%、日活 1k+）。</p>
+            <div class="meta">
+              <a class="btn" href="https://github.com/YUANERKANG" target="_blank" rel="noreferrer">源码 Repo</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">在线演示 Demo</a>
+              <span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JS</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>项目 B：XXX</h3>
+            <p>写清楚你的角色（独立完成/负责某模块）、亮点（架构/体验/稳定性/安全性）、以及可量化结果。</p>
+            <div class="meta">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">源码 Repo</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">文章/说明</a>
+              <span class="chip">React</span><span class="chip">Node</span><span class="chip">CI</span>
+            </div>
+          </article>
+
+          <article class="project">
+            <h3>项目 C：XXX</h3>
+            <p>如果没有 Demo，可以放截图/视频链接，或写一个“功能点清单”。</p>
+            <div class="meta">
+              <a class="btn" href="#" target="_blank" rel="noreferrer">源码 Repo</a>
+              <a class="btn" href="#" target="_blank" rel="noreferrer">下载/发布</a>
+              <span class="chip">Python</span><span class="chip">Data</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <aside class="card">
+        <section id="about">
+          <h2>关于我 About</h2>
+          <p class="muted">
+            这里写 3～5 句话：你的方向（前端/后端/算法/设计等）、擅长领域、正在做什么、你希望的机会类型。
+          </p>
+          <div class="chips">
+            <span class="chip">方向：XXX</span>
+            <span class="chip">地区：XXX</span>
+            <span class="chip">可远程：是/否</span>
+          </div>
+        </section>
+
+        <section id="contact" style="margin-top:14px">
+          <h2>联系 Contact</h2>
+          <p class="muted" style="margin:0 0 10px">建议至少放：邮箱 + GitHub +（可选）微信/领英。</p>
+          <div class="meta">
+            <a class="btn" href="mailto:yourname@example.com">邮箱 Email</a>
+            <a class="btn" href="https://github.com/YUANERKANG" target="_blank" rel="noreferrer">GitHub</a>
+            <a class="btn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="y"></span> YUANERKANG · Hosted on GitHub Pages</div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
