@@ -1,0 +1,17 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">个人头像占位图</title>
+  <desc id="desc">一张用于个人网站的抽象头像插画，可替换为真实照片。</desc>
+  <rect width="900" height="1100" rx="32" fill="#F4F8F6"/>
+  <path d="M0 780C150 705 260 706 390 768C535 837 670 838 900 716V1100H0V780Z" fill="#C8D7CA"/>
+  <path d="M0 0H900V610C743 642 613 619 510 540C390 448 258 418 0 508V0Z" fill="#E5EDF1"/>
+  <circle cx="450" cy="370" r="190" fill="#1F7A6D"/>
+  <path d="M278 910C300 778 369 696 450 696C531 696 600 778 622 910H278Z" fill="#23211D"/>
+  <circle cx="450" cy="390" r="132" fill="#DFAE8C"/>
+  <path d="M302 365C338 240 409 190 516 224C593 248 632 312 624 401C556 383 486 332 442 269C406 326 359 356 302 365Z" fill="#23211D"/>
+  <path d="M388 418C405 437 429 448 451 448C474 448 498 437 514 418" stroke="#8B4B35" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="396" cy="376" r="13" fill="#23211D"/>
+  <circle cx="506" cy="376" r="13" fill="#23211D"/>
+  <path d="M220 960H680" stroke="#B65F3A" stroke-width="26" stroke-linecap="round"/>
+  <path d="M155 184H302" stroke="#B65F3A" stroke-width="18" stroke-linecap="round"/>
+  <path d="M596 184H745" stroke="#1F7A6D" stroke-width="18" stroke-linecap="round"/>
+</svg>
